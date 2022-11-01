@@ -1,0 +1,5 @@
+MATHUOC	String	20	DQ0001
+TENTHUOC	String	100	Thuoc ho
+SOLUONG	Number		100
+NGAYHETHAN	Date		12/12/2020
+LOSX	Number		1
