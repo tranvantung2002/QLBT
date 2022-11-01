@@ -536,9 +536,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1.Location = new System.Drawing.Point(729, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(369, 108);
+            this.label1.Size = new System.Drawing.Size(585, 108);
             this.label1.TabIndex = 13;
-            this.label1.Text = "bbbbbb";
+            this.label1.Text = "aaaaaaaaaa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmMain
