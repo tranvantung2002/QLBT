@@ -532,13 +532,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.ForeColor = System.Drawing.Color.SeaShell;
             this.label1.Location = new System.Drawing.Point(729, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1311, 108);
+            this.label1.Size = new System.Drawing.Size(423, 108);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Phần mềm quản lý bán thuốc";
+            this.label1.Text = "aaaaaaa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmMain
