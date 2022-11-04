@@ -33,5 +33,15 @@ namespace Phan_mem_quan_ly_ban_thuoc.Properties {
                 return ((string)(this["THUOCConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MA2UE8D\\HAU123;Initial Catalog=QLBT;Integrated Security=True")]
+        public string QLBTConnectionString {
+            get {
+                return ((string)(this["QLBTConnectionString"]));
+            }
+        }
     }
 }

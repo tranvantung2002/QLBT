@@ -67,7 +67,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             {
                 if (i < 4)
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-GITFMCB6\SQLEXPRESS;Initial Catalog=THUOC;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True");
                     try
                     {
                         conn.Open();
@@ -115,14 +115,14 @@ namespace Phan_mem_quan_ly_ban_thuoc
             MessageBox.Show("Liên hệ: 0329238046 đề lấy lại mật khẩu !!!", "Quên mật khẩu", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-            lblThongbao.Text = "";
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtUser_TextChanged_1(object sender, EventArgs e)
+        {
+            lblThongbao.Text = "";
         }
     }
 }
