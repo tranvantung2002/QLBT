@@ -392,7 +392,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 154);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.ShowItemToolTips = true;
             this.menuStrip1.Size = new System.Drawing.Size(393, 1500);
@@ -730,12 +729,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MATHUOC,
             this.MABAN,
-            this.TENTHUOC,
             this.LOSX,
             this.DVT,
             this.DONGIA,
             this.SLUONG,
-            this.THANHTIEN});
+            this.THANHTIEN,
+            this.TENTHUOC});
             this.grdData.DataSource = this.tblCTHoadonbanBindingSource1;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
@@ -745,7 +744,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdData.DefaultCellStyle = dataGridViewCellStyle5;
-            this.grdData.Location = new System.Drawing.Point(462, 414);
+            this.grdData.Location = new System.Drawing.Point(62, 418);
             this.grdData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdData.Name = "grdData";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -757,7 +756,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1164, 751);
+            this.grdData.Size = new System.Drawing.Size(1175, 751);
             this.grdData.TabIndex = 75;
             this.grdData.UseWaitCursor = true;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellContentClick);
@@ -872,11 +871,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(462, 159);
+            this.groupBox1.Location = new System.Drawing.Point(62, 163);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1164, 229);
+            this.groupBox1.Size = new System.Drawing.Size(1175, 229);
             this.groupBox1.TabIndex = 155;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
@@ -1004,11 +1003,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.groupBox2.Controls.Add(this.cboThuoc);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(1660, 159);
+            this.groupBox2.Location = new System.Drawing.Point(1260, 163);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(622, 475);
+            this.groupBox2.Size = new System.Drawing.Size(633, 475);
             this.groupBox2.TabIndex = 156;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
@@ -1168,7 +1167,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1713, 685);
+            this.label8.Location = new System.Drawing.Point(1313, 689);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 25);
@@ -1180,7 +1179,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1713, 746);
+            this.label9.Location = new System.Drawing.Point(1313, 750);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 25);
@@ -1192,7 +1191,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1713, 808);
+            this.label14.Location = new System.Drawing.Point(1313, 812);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(115, 25);
@@ -1204,7 +1203,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1713, 869);
+            this.label15.Location = new System.Drawing.Point(1313, 873);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(182, 25);
@@ -1216,7 +1215,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1713, 931);
+            this.label16.Location = new System.Drawing.Point(1313, 935);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(198, 25);
@@ -1230,10 +1229,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1800, 1014);
+            this.button1.Location = new System.Drawing.Point(1404, 1008);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(360, 58);
+            this.button1.Size = new System.Drawing.Size(371, 58);
             this.button1.TabIndex = 2;
             this.button1.Text = "Thanh toán";
             this.button1.UseVisualStyleBackColor = false;
@@ -1244,7 +1243,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.txtKhachtra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtKhachtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKhachtra.Location = new System.Drawing.Point(2024, 868);
+            this.txtKhachtra.Location = new System.Drawing.Point(1586, 847);
             this.txtKhachtra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtKhachtra.Name = "txtKhachtra";
             this.txtKhachtra.Size = new System.Drawing.Size(260, 24);
@@ -1259,7 +1258,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.txtTrakhach.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTrakhach.Enabled = false;
             this.txtTrakhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrakhach.Location = new System.Drawing.Point(2024, 929);
+            this.txtTrakhach.Location = new System.Drawing.Point(1586, 908);
             this.txtTrakhach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTrakhach.Name = "txtTrakhach";
             this.txtTrakhach.Size = new System.Drawing.Size(260, 24);
@@ -1273,7 +1272,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.txtTongtien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTongtien.Enabled = false;
             this.txtTongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongtien.Location = new System.Drawing.Point(2024, 800);
+            this.txtTongtien.Location = new System.Drawing.Point(1586, 779);
             this.txtTongtien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTongtien.Name = "txtTongtien";
             this.txtTongtien.Size = new System.Drawing.Size(260, 24);
@@ -1287,7 +1286,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.txtGiamgia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGiamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiamgia.Location = new System.Drawing.Point(2024, 739);
+            this.txtGiamgia.Location = new System.Drawing.Point(1586, 718);
             this.txtGiamgia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGiamgia.Name = "txtGiamgia";
             this.txtGiamgia.Size = new System.Drawing.Size(260, 24);
@@ -1315,7 +1314,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(1997, 846);
+            this.panel2.Location = new System.Drawing.Point(1559, 825);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 2);

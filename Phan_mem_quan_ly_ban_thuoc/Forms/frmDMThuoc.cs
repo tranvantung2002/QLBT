@@ -363,6 +363,16 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
+        private void btnLoc_MouseLeave(object sender, EventArgs e)
+        {
+            btnLoc.BackColor = Color.FromArgb(34, 54, 86);
+        }
+
+        private void btnLoc_MouseHover(object sender, EventArgs e)
+        {
+            btnLoc.BackColor = Color.FromArgb(141, 153, 174);
+        }
+
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;

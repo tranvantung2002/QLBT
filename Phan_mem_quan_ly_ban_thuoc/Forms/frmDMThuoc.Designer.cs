@@ -33,6 +33,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             System.Windows.Forms.PictureBox pictureBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDMThuoc));
             System.Windows.Forms.PictureBox pictureBox3;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -139,7 +140,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
-            pictureBox2.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -152,7 +152,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 32;
             pictureBox3.TabStop = false;
-            pictureBox3.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -163,7 +162,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.pictureBox1.Size = new System.Drawing.Size(393, 166);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // timer1
             // 
@@ -186,7 +184,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip3.Size = new System.Drawing.Size(342, 42);
             this.statusStrip3.TabIndex = 30;
             this.statusStrip3.Text = "statusStrip3";
-            this.statusStrip3.UseWaitCursor = true;
             // 
             // lblThoigian
             // 
@@ -219,7 +216,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip1.Size = new System.Drawing.Size(1984, 42);
             this.statusStrip1.TabIndex = 28;
             this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.UseWaitCursor = true;
             // 
             // lblNguoidung
             // 
@@ -253,7 +249,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip2.Size = new System.Drawing.Size(393, 42);
             this.statusStrip2.TabIndex = 29;
             this.statusStrip2.Text = "statusStrip2";
-            this.statusStrip2.UseWaitCursor = true;
             // 
             // btnHethong
             // 
@@ -572,14 +567,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 152);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.ShowItemToolTips = true;
             this.menuStrip1.Size = new System.Drawing.Size(393, 1500);
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -592,7 +585,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label2.Size = new System.Drawing.Size(389, 55);
             this.label2.TabIndex = 34;
             this.label2.Text = "Danh mục thuốc";
-            this.label2.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
@@ -604,7 +596,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.pictureBox4.Size = new System.Drawing.Size(1935, 128);
             this.pictureBox4.TabIndex = 33;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.UseWaitCursor = true;
             // 
             // lblTong
             // 
@@ -617,7 +608,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblTong.Size = new System.Drawing.Size(110, 25);
             this.lblTong.TabIndex = 72;
             this.lblTong.Text = "Tổng số : ";
-            this.lblTong.UseWaitCursor = true;
             // 
             // txtMa
             // 
@@ -627,7 +617,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(235, 31);
             this.txtMa.TabIndex = 71;
-            this.txtMa.UseWaitCursor = true;
             this.txtMa.Visible = false;
             // 
             // label3
@@ -641,66 +630,67 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label3.Size = new System.Drawing.Size(316, 25);
             this.label3.TabIndex = 70;
             this.label3.Text = "Kích đúp để sửa thông tin thuốc";
-            this.label3.UseWaitCursor = true;
             // 
             // btnTK
             // 
             this.btnTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnTK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
-            this.btnTK.Location = new System.Drawing.Point(1401, 240);
+            this.btnTK.Location = new System.Drawing.Point(1174, 193);
             this.btnTK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(152, 58);
             this.btnTK.TabIndex = 3;
             this.btnTK.Text = "&Tìm lại";
             this.btnTK.UseVisualStyleBackColor = false;
-            this.btnTK.UseWaitCursor = true;
             this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
             // btnLoc
             // 
             this.btnLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnLoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoc.ForeColor = System.Drawing.Color.White;
-            this.btnLoc.Location = new System.Drawing.Point(1239, 240);
+            this.btnLoc.Location = new System.Drawing.Point(1012, 193);
             this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(152, 58);
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "&Lọc";
             this.btnLoc.UseVisualStyleBackColor = false;
-            this.btnLoc.UseWaitCursor = true;
             this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            this.btnLoc.MouseLeave += new System.EventHandler(this.btnLoc_MouseLeave);
+            this.btnLoc.MouseHover += new System.EventHandler(this.btnLoc_MouseHover);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(946, 219);
+            this.label1.Location = new System.Drawing.Point(719, 172);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 67;
             this.label1.Text = "Giá trị tìm kiếm";
-            this.label1.UseWaitCursor = true;
             // 
             // comGT
             // 
+            this.comGT.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comGT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comGT.FormattingEnabled = true;
-            this.comGT.Location = new System.Drawing.Point(926, 251);
+            this.comGT.Location = new System.Drawing.Point(699, 204);
             this.comGT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comGT.Name = "comGT";
             this.comGT.Size = new System.Drawing.Size(255, 32);
             this.comGT.TabIndex = 1;
-            this.comGT.UseWaitCursor = true;
             // 
             // comTruong
             // 
+            this.comTruong.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.comTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comTruong.FormattingEnabled = true;
             this.comTruong.Items.AddRange(new object[] {
@@ -708,12 +698,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             "Mã nhóm",
             "Hãng sản xuất",
             "Nước sản xuất"});
-            this.comTruong.Location = new System.Drawing.Point(609, 251);
+            this.comTruong.Location = new System.Drawing.Point(428, 204);
             this.comTruong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comTruong.Name = "comTruong";
             this.comTruong.Size = new System.Drawing.Size(250, 32);
             this.comTruong.TabIndex = 0;
-            this.comTruong.UseWaitCursor = true;
             this.comTruong.SelectedIndexChanged += new System.EventHandler(this.comTruong_SelectedIndexChanged);
             // 
             // label8
@@ -721,13 +710,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label8.Location = new System.Drawing.Point(621, 219);
+            this.label8.Location = new System.Drawing.Point(440, 172);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 25);
             this.label8.TabIndex = 64;
             this.label8.Text = "Tên trường";
-            this.label8.UseWaitCursor = true;
             // 
             // btnXoa
             // 
@@ -742,7 +730,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "&Xoá";
             this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.UseWaitCursor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnAddnew
@@ -751,14 +738,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnAddnew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
-            this.btnAddnew.Location = new System.Drawing.Point(1947, 232);
+            this.btnAddnew.Location = new System.Drawing.Point(1349, 193);
             this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddnew.Name = "btnAddnew";
-            this.btnAddnew.Size = new System.Drawing.Size(198, 71);
+            this.btnAddnew.Size = new System.Drawing.Size(166, 58);
             this.btnAddnew.TabIndex = 4;
-            this.btnAddnew.Text = "+   &Thêm mới";
+            this.btnAddnew.Text = "&Thêm mới";
             this.btnAddnew.UseVisualStyleBackColor = false;
-            this.btnAddnew.UseWaitCursor = true;
             this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click);
             // 
             // btnLast
@@ -774,7 +760,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnLast.TabIndex = 61;
             this.btnLast.Text = "&Cuối";
             this.btnLast.UseVisualStyleBackColor = false;
-            this.btnLast.UseWaitCursor = true;
             this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
@@ -790,7 +775,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnNext.TabIndex = 60;
             this.btnNext.Text = "&Sau";
             this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.UseWaitCursor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrv
@@ -806,7 +790,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnPrv.TabIndex = 59;
             this.btnPrv.Text = "&Trước";
             this.btnPrv.UseVisualStyleBackColor = false;
-            this.btnPrv.UseWaitCursor = true;
             this.btnPrv.Click += new System.EventHandler(this.btnPrv_Click);
             // 
             // btnFirst
@@ -822,21 +805,22 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnFirst.TabIndex = 58;
             this.btnFirst.Text = "&Đầu";
             this.btnFirst.UseVisualStyleBackColor = false;
-            this.btnFirst.UseWaitCursor = true;
             this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // grdData
             // 
+            this.grdData.AllowUserToOrderColumns = true;
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grdData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -850,15 +834,22 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.NUOCSX,
             this.QUYCACHDONGGOI,
             this.DVT});
-            this.grdData.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.grdData.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.grdData.DataSource = this.tblThuocBindingSource;
-            this.grdData.Location = new System.Drawing.Point(608, 351);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nunito Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdData.DefaultCellStyle = dataGridViewCellStyle2;
+            this.grdData.Location = new System.Drawing.Point(481, 262);
             this.grdData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1538, 751);
+            this.grdData.Size = new System.Drawing.Size(1378, 751);
             this.grdData.TabIndex = 57;
-            this.grdData.UseWaitCursor = true;
             this.grdData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellContentClick);
             this.grdData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellDoubleClick);
             // 
@@ -869,7 +860,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.MATHUOC.HeaderText = "Mã thuốc";
             this.MATHUOC.MinimumWidth = 6;
             this.MATHUOC.Name = "MATHUOC";
-            this.MATHUOC.Width = 137;
+            this.MATHUOC.Width = 138;
             // 
             // TENNHOM
             // 
@@ -878,7 +869,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.TENNHOM.HeaderText = "Tên nhóm";
             this.TENNHOM.MinimumWidth = 6;
             this.TENNHOM.Name = "TENNHOM";
-            this.TENNHOM.Width = 145;
+            this.TENNHOM.Width = 142;
             // 
             // MANHOM
             // 
@@ -888,7 +879,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.MANHOM.MinimumWidth = 6;
             this.MANHOM.Name = "MANHOM";
             this.MANHOM.Visible = false;
-            this.MANHOM.Width = 163;
+            this.MANHOM.Width = 166;
             // 
             // TENTHUOC
             // 
@@ -897,7 +888,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.TENTHUOC.HeaderText = "Tên thuốc";
             this.TENTHUOC.MinimumWidth = 6;
             this.TENTHUOC.Name = "TENTHUOC";
-            this.TENTHUOC.Width = 145;
+            this.TENTHUOC.Width = 143;
             // 
             // HOATCHATCHINH
             // 
@@ -906,7 +897,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.HOATCHATCHINH.HeaderText = "Hoạt chất chính";
             this.HOATCHATCHINH.MinimumWidth = 6;
             this.HOATCHATCHINH.Name = "HOATCHATCHINH";
-            this.HOATCHATCHINH.Width = 198;
+            this.HOATCHATCHINH.Width = 202;
             // 
             // HAMLUONG
             // 
@@ -915,7 +906,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.HAMLUONG.HeaderText = "Hàm lượng";
             this.HAMLUONG.MinimumWidth = 6;
             this.HAMLUONG.Name = "HAMLUONG";
-            this.HAMLUONG.Width = 151;
+            this.HAMLUONG.Width = 155;
             // 
             // HANGSX
             // 
@@ -924,7 +915,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.HANGSX.HeaderText = "Hãng sản xuất";
             this.HANGSX.MinimumWidth = 6;
             this.HANGSX.Name = "HANGSX";
-            this.HANGSX.Width = 187;
+            this.HANGSX.Width = 188;
             // 
             // NUOCSX
             // 
@@ -933,7 +924,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.NUOCSX.HeaderText = "Nước sản xuất";
             this.NUOCSX.MinimumWidth = 6;
             this.NUOCSX.Name = "NUOCSX";
-            this.NUOCSX.Width = 186;
+            this.NUOCSX.Width = 185;
             // 
             // QUYCACHDONGGOI
             // 
@@ -942,7 +933,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.QUYCACHDONGGOI.HeaderText = "Quy cách đóng gói";
             this.QUYCACHDONGGOI.MinimumWidth = 6;
             this.QUYCACHDONGGOI.Name = "QUYCACHDONGGOI";
-            this.QUYCACHDONGGOI.Width = 229;
+            this.QUYCACHDONGGOI.Width = 228;
             // 
             // DVT
             // 
@@ -951,7 +942,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.DVT.HeaderText = "Đơn vị tính";
             this.DVT.MinimumWidth = 6;
             this.DVT.Name = "DVT";
-            this.DVT.Width = 150;
+            this.DVT.Width = 156;
             // 
             // tblThuocBindingSource
             // 
@@ -980,7 +971,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "&Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.UseWaitCursor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // frmDMThuoc
@@ -1015,13 +1005,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.menuStrip1);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDMThuoc";
             this.Text = "frmDMThuoc";
-            this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDMThuoc_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();

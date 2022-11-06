@@ -16,7 +16,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
 
         public static void Connect()
         {
-            //Thiết lập giá trị cho chuỗi kết nối
             connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
             Conn = new SqlConnection();
             Conn.ConnectionString = connString; 	
@@ -101,8 +100,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
 
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
-            SqlDataAdapter Mydata = new SqlDataAdapter(sql, Functions.Conn);
+            SqlDataAdapter Mydata = new SqlDataAdapter(sql, Conn);
             DataTable table = new DataTable();
+            table.Clear();
             Mydata.Fill(table);
             cbo.DataSource = table;
             cbo.ValueMember = ma;    // Truong gia tri

@@ -254,7 +254,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ketnoi();
+           // ketnoi();
         }
 
         private void grdData_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -340,6 +340,29 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private void Huongdan_Click(object sender, EventArgs e)
         {
             Forms_Messagebox.frm_Message_Hotro f = new Forms_Messagebox.frm_Message_Hotro();
+            f.ShowDialog();
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                int i = grdData.CurrentRow.Index;
+                sql = "delete from tblKhachhang where MAKHACH = '" + grdData.Rows[i].Cells["MAKHACH"].Value.ToString() + "';";
+                Class.Functions.RunSqlDel(sql);
+                grdData.Refresh();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int i = grdData.CurrentRow.Index;
+            string manhanvien = grdData.Rows[i].Cells["MAKHACH"].Value.ToString();
+            string tennhanvien = grdData.Rows[i].Cells["TENKHACH"].Value.ToString();
+            string diachi = grdData.Rows[i].Cells["DIACHI"].Value.ToString();
+            string sodienthoai = grdData.Rows[i].Cells["SDT"].Value.ToString();
+            string email = grdData.Rows[i].Cells["EMAIL"].Value.ToString();
+            Forms_Update.frmUp_khachhang f = new Forms_Update.frmUp_khachhang(manhanvien, tennhanvien, diachi, sodienthoai, email);
             f.ShowDialog();
         }
 

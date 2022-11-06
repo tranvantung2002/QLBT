@@ -30,7 +30,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUp_khachhang));
             this.mskDienthoai = new System.Windows.Forms.MaskedTextBox();
             this.grdData = new System.Windows.Forms.DataGridView();
@@ -62,6 +62,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnThemlai = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhanvienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHUOCDataSet)).BeginInit();
@@ -75,25 +79,25 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // mskDienthoai
             // 
             this.mskDienthoai.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskDienthoai.Location = new System.Drawing.Point(695, 111);
-            this.mskDienthoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskDienthoai.Location = new System.Drawing.Point(799, 139);
+            this.mskDienthoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mskDienthoai.Mask = "(999) 000-0000";
             this.mskDienthoai.Name = "mskDienthoai";
-            this.mskDienthoai.Size = new System.Drawing.Size(309, 31);
+            this.mskDienthoai.Size = new System.Drawing.Size(330, 35);
             this.mskDienthoai.TabIndex = 2;
             // 
             // grdData
             // 
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -105,11 +109,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.mATKHAUDataGridViewTextBoxColumn,
             this.qUYENDataGridViewTextBoxColumn});
             this.grdData.DataSource = this.tblNhanvienBindingSource;
-            this.grdData.Location = new System.Drawing.Point(15, 562);
-            this.grdData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.grdData.Location = new System.Drawing.Point(17, 702);
+            this.grdData.Margin = new System.Windows.Forms.Padding(6);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1209, 156);
+            this.grdData.Size = new System.Drawing.Size(1360, 195);
             this.grdData.TabIndex = 97;
             // 
             // mANHANVIENDataGridViewTextBoxColumn
@@ -185,70 +189,70 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox5.Location = new System.Drawing.Point(-3, 464);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(-3, 580);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1063, 12);
+            this.pictureBox5.Size = new System.Drawing.Size(1196, 15);
             this.pictureBox5.TabIndex = 100;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox4.Location = new System.Drawing.Point(1044, 28);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(1174, 35);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(13, 561);
+            this.pictureBox4.Size = new System.Drawing.Size(15, 701);
             this.pictureBox4.TabIndex = 99;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox3.Location = new System.Drawing.Point(-3, 75);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(-3, 94);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(13, 561);
+            this.pictureBox3.Size = new System.Drawing.Size(15, 701);
             this.pictureBox3.TabIndex = 98;
             this.pictureBox3.TabStop = false;
             // 
             // txtMasothue
             // 
             this.txtMasothue.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMasothue.Location = new System.Drawing.Point(695, 178);
-            this.txtMasothue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMasothue.Location = new System.Drawing.Point(799, 222);
+            this.txtMasothue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMasothue.Name = "txtMasothue";
-            this.txtMasothue.Size = new System.Drawing.Size(309, 31);
+            this.txtMasothue.Size = new System.Drawing.Size(330, 35);
             this.txtMasothue.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(612, 182);
+            this.label7.Location = new System.Drawing.Point(688, 228);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 23);
+            this.label7.Size = new System.Drawing.Size(82, 29);
             this.label7.TabIndex = 96;
             this.label7.Text = "Email :";
             // 
             // txtDiachi
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiachi.Location = new System.Drawing.Point(219, 249);
-            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiachi.Location = new System.Drawing.Point(263, 311);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(704, 31);
+            this.txtDiachi.Size = new System.Drawing.Size(775, 35);
             this.txtDiachi.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 252);
+            this.label5.Location = new System.Drawing.Point(143, 315);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 23);
+            this.label5.Size = new System.Drawing.Size(95, 29);
             this.label5.TabIndex = 95;
             this.label5.Text = "Địa chỉ :";
             // 
@@ -256,50 +260,50 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(547, 114);
+            this.label4.Location = new System.Drawing.Point(615, 142);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 23);
+            this.label4.Size = new System.Drawing.Size(161, 29);
             this.label4.TabIndex = 94;
             this.label4.Text = "Số điện thoại :";
             // 
             // txtTen
             // 
             this.txtTen.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(219, 178);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTen.Location = new System.Drawing.Point(263, 222);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(309, 31);
+            this.txtTen.Size = new System.Drawing.Size(330, 35);
             this.txtTen.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 182);
+            this.label3.Location = new System.Drawing.Point(55, 228);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 23);
+            this.label3.Size = new System.Drawing.Size(185, 29);
             this.label3.TabIndex = 93;
             this.label3.Text = "Tên khách hàng :";
             // 
             // txtMa
             // 
             this.txtMa.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(219, 111);
-            this.txtMa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMa.Location = new System.Drawing.Point(263, 139);
+            this.txtMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(309, 31);
+            this.txtMa.Size = new System.Drawing.Size(330, 35);
             this.txtMa.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 114);
+            this.label2.Location = new System.Drawing.Point(62, 142);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 23);
+            this.label2.Size = new System.Drawing.Size(179, 29);
             this.label2.TabIndex = 92;
             this.label2.Text = "Mã khách hàng :";
             // 
@@ -309,10 +313,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.label1.Font = new System.Drawing.Font("Nunito Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(93, 17);
+            this.label1.Location = new System.Drawing.Point(105, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(369, 46);
+            this.label1.Size = new System.Drawing.Size(444, 55);
             this.label1.TabIndex = 91;
             this.label1.Text = "Thông tin khách hàng";
             // 
@@ -320,10 +324,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(71, 57);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 71);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 90;
             this.pictureBox2.TabStop = false;
@@ -331,10 +335,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1063, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(1196, 102);
             this.pictureBox1.TabIndex = 89;
             this.pictureBox1.TabStop = false;
             // 
@@ -344,10 +348,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThoat.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(649, 337);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Location = new System.Drawing.Point(730, 421);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(185, 69);
+            this.btnThoat.Size = new System.Drawing.Size(208, 86);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Trở về";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -359,12 +363,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.btnThemlai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemlai.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemlai.ForeColor = System.Drawing.Color.White;
-            this.btnThemlai.Location = new System.Drawing.Point(219, 337);
-            this.btnThemlai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemlai.Location = new System.Drawing.Point(246, 421);
+            this.btnThemlai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemlai.Name = "btnThemlai";
-            this.btnThemlai.Size = new System.Drawing.Size(185, 69);
+            this.btnThemlai.Size = new System.Drawing.Size(208, 86);
             this.btnThemlai.TabIndex = 5;
-            this.btnThemlai.Text = "Sửa";
+            this.btnThemlai.Text = "Sửa lại";
             this.btnThemlai.UseVisualStyleBackColor = false;
             this.btnThemlai.Click += new System.EventHandler(this.btnThemlai_Click);
             // 
@@ -374,21 +378,69 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(435, 337);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(489, 421);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(185, 69);
+            this.btnUpdate.Size = new System.Drawing.Size(208, 86);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(233, 222);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(23, 29);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(769, 139);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 29);
+            this.label8.TabIndex = 102;
+            this.label8.Text = "*";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(769, 222);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 29);
+            this.label9.TabIndex = 103;
+            this.label9.Text = "*";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(233, 311);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 29);
+            this.label10.TabIndex = 104;
+            this.label10.Text = "*";
+            // 
             // frmUp_khachhang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1057, 473);
+            this.ClientSize = new System.Drawing.Size(1189, 591);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnThemlai);
             this.Controls.Add(this.btnUpdate);
@@ -411,7 +463,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmUp_khachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUp_khachhang";
@@ -461,5 +513,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnThemlai;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

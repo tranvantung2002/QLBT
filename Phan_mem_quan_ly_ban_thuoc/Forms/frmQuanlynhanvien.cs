@@ -19,6 +19,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         DataTable comdt = new DataTable();
         DataTable khuong;
         string sql,  fname;
+
         public frmQuanlynhanvien(string hello,string hello1)
         {
             InitializeComponent();

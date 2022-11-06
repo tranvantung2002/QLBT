@@ -107,6 +107,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.tHUOCDataSet = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSet();
             this.tblKhachhangTableAdapter = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSetTableAdapters.tblKhachhangTableAdapter();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,10 +126,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            pictureBox2.Location = new System.Drawing.Point(12, 11);
+            pictureBox2.Location = new System.Drawing.Point(14, 14);
             pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(309, 82);
+            pictureBox2.Size = new System.Drawing.Size(348, 102);
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 31;
             pictureBox2.TabStop = false;
@@ -136,14 +138,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // DMKhachhang
             // 
             this.DMKhachhang.Name = "DMKhachhang";
-            this.DMKhachhang.Size = new System.Drawing.Size(337, 30);
+            this.DMKhachhang.Size = new System.Drawing.Size(392, 40);
             this.DMKhachhang.Text = "3. Danh mục khách hàng";
             this.DMKhachhang.Click += new System.EventHandler(this.DMKhachhang_Click);
             // 
             // DMNhacungcap
             // 
             this.DMNhacungcap.Name = "DMNhacungcap";
-            this.DMNhacungcap.Size = new System.Drawing.Size(337, 30);
+            this.DMNhacungcap.Size = new System.Drawing.Size(392, 40);
             this.DMNhacungcap.Text = "4. Danh mục nhà cung cấp";
             this.DMNhacungcap.Click += new System.EventHandler(this.DMNhacungcap_Click);
             // 
@@ -160,38 +162,38 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.quảnLýKhoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.quảnLýKhoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.quảnLýKhoToolStripMenuItem.Name = "quảnLýKhoToolStripMenuItem";
-            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(343, 30);
+            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(386, 35);
             this.quảnLýKhoToolStripMenuItem.Text = "     &Quản lý kho                 ";
             this.quảnLýKhoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HDNhap
             // 
             this.HDNhap.Name = "HDNhap";
-            this.HDNhap.Size = new System.Drawing.Size(260, 30);
+            this.HDNhap.Size = new System.Drawing.Size(308, 40);
             this.HDNhap.Text = "1. Hóa đơn nhập";
             this.HDNhap.Click += new System.EventHandler(this.HDNhap_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(257, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(305, 6);
             // 
             // Tonkho
             // 
             this.Tonkho.Name = "Tonkho";
-            this.Tonkho.Size = new System.Drawing.Size(260, 30);
+            this.Tonkho.Size = new System.Drawing.Size(308, 40);
             this.Tonkho.Text = "2. Tồn kho";
             this.Tonkho.Click += new System.EventHandler(this.Tonkho_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(257, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(305, 6);
             // 
             // Truyxuat
             // 
             this.Truyxuat.Name = "Truyxuat";
-            this.Truyxuat.Size = new System.Drawing.Size(260, 30);
+            this.Truyxuat.Size = new System.Drawing.Size(308, 40);
             this.Truyxuat.Text = "3. Truy xuất thuốc";
             this.Truyxuat.Click += new System.EventHandler(this.Truyxuat_Click);
             // 
@@ -206,26 +208,26 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.bánHàngToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bánHàngToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
-            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(343, 30);
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(386, 35);
             this.bánHàngToolStripMenuItem.Text = "     &Bán hàng                   ";
             this.bánHàngToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LapHD
             // 
             this.LapHD.Name = "LapHD";
-            this.LapHD.Size = new System.Drawing.Size(282, 30);
+            this.LapHD.Size = new System.Drawing.Size(331, 40);
             this.LapHD.Text = "1. Lập hóa đơn";
             this.LapHD.Click += new System.EventHandler(this.LapHD_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(279, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(328, 6);
             // 
             // TKHoadon
             // 
             this.TKHoadon.Name = "TKHoadon";
-            this.TKHoadon.Size = new System.Drawing.Size(282, 30);
+            this.TKHoadon.Size = new System.Drawing.Size(331, 40);
             this.TKHoadon.Text = "2. Tìm kiếm hóa đơn";
             this.TKHoadon.Click += new System.EventHandler(this.TKHoadon_Click);
             // 
@@ -242,7 +244,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.báoCáoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.báoCáoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(343, 30);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(386, 35);
             this.báoCáoToolStripMenuItem.Text = "     Báo &cáo                      ";
             this.báoCáoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -255,61 +257,61 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.toolStripSeparator3,
             this.doanhThuTheoKháchHàngToolStripMenuItem});
             this.BCDoanhthu.Name = "BCDoanhthu";
-            this.BCDoanhthu.Size = new System.Drawing.Size(322, 30);
+            this.BCDoanhthu.Size = new System.Drawing.Size(374, 40);
             this.BCDoanhthu.Text = "1. Báo cáo doanh thu";
             // 
             // doanhThuTheoNhómThuốcToolStripMenuItem
             // 
             this.doanhThuTheoNhómThuốcToolStripMenuItem.Name = "doanhThuTheoNhómThuốcToolStripMenuItem";
-            this.doanhThuTheoNhómThuốcToolStripMenuItem.Size = new System.Drawing.Size(392, 30);
+            this.doanhThuTheoNhómThuốcToolStripMenuItem.Size = new System.Drawing.Size(454, 40);
             this.doanhThuTheoNhómThuốcToolStripMenuItem.Text = "1.1. Doanh thu theo nhóm thuốc";
             this.doanhThuTheoNhómThuốcToolStripMenuItem.Click += new System.EventHandler(this.DT_Nhomthuoc_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(389, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(451, 6);
             // 
             // doanhThuTheoThángToolStripMenuItem
             // 
             this.doanhThuTheoThángToolStripMenuItem.Name = "doanhThuTheoThángToolStripMenuItem";
-            this.doanhThuTheoThángToolStripMenuItem.Size = new System.Drawing.Size(392, 30);
+            this.doanhThuTheoThángToolStripMenuItem.Size = new System.Drawing.Size(454, 40);
             this.doanhThuTheoThángToolStripMenuItem.Text = "1.2. Doanh thu theo tháng";
             this.doanhThuTheoThángToolStripMenuItem.Click += new System.EventHandler(this.DT_Theothang_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(389, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(451, 6);
             // 
             // doanhThuTheoKháchHàngToolStripMenuItem
             // 
             this.doanhThuTheoKháchHàngToolStripMenuItem.Name = "doanhThuTheoKháchHàngToolStripMenuItem";
-            this.doanhThuTheoKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(392, 30);
+            this.doanhThuTheoKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(454, 40);
             this.doanhThuTheoKháchHàngToolStripMenuItem.Text = "1.3. Doanh thu theo khách hàng";
             this.doanhThuTheoKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.doanhThuTheoKháchHàngToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(319, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(371, 6);
             // 
             // BCNhaphang
             // 
             this.BCNhaphang.Name = "BCNhaphang";
-            this.BCNhaphang.Size = new System.Drawing.Size(322, 30);
+            this.BCNhaphang.Size = new System.Drawing.Size(374, 40);
             this.BCNhaphang.Text = "2. Báo cáo tồn kho";
             this.BCNhaphang.Click += new System.EventHandler(this.BCNhaphang_Click_1);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(319, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(371, 6);
             // 
             // BCHSD
             // 
             this.BCHSD.Name = "BCHSD";
-            this.BCHSD.Size = new System.Drawing.Size(322, 30);
+            this.BCHSD.Size = new System.Drawing.Size(374, 40);
             this.BCHSD.Text = "3. Báo cáo thuốc hết hạn";
             this.BCHSD.Click += new System.EventHandler(this.BCHSD_Click_1);
             // 
@@ -322,29 +324,29 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.trợGiúpToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.trợGiúpToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(343, 30);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(386, 35);
             this.trợGiúpToolStripMenuItem.Text = "     &Trợ giúp                      ";
             this.trợGiúpToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Huongdan
             // 
             this.Huongdan.Name = "Huongdan";
-            this.Huongdan.Size = new System.Drawing.Size(297, 30);
+            this.Huongdan.Size = new System.Drawing.Size(348, 40);
             this.Huongdan.Text = "1. Hướng dẫn sử dụng";
             this.Huongdan.Click += new System.EventHandler(this.Huongdan_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(334, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(389, 6);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(349, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(393, 166);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
@@ -352,7 +354,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(334, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(389, 6);
             // 
             // timer1
             // 
@@ -369,10 +371,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblThoigian});
-            this.statusStrip3.Location = new System.Drawing.Point(1761, 1030);
+            this.statusStrip3.Location = new System.Drawing.Point(1981, 1288);
             this.statusStrip3.Name = "statusStrip3";
-            this.statusStrip3.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip3.Size = new System.Drawing.Size(304, 34);
+            this.statusStrip3.Padding = new System.Windows.Forms.Padding(1, 0, 15, 0);
+            this.statusStrip3.Size = new System.Drawing.Size(342, 42);
             this.statusStrip3.TabIndex = 30;
             this.statusStrip3.Text = "statusStrip3";
             this.statusStrip3.UseWaitCursor = true;
@@ -382,7 +384,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblThoigian.Font = new System.Drawing.Font("Nunito Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoigian.ForeColor = System.Drawing.Color.White;
             this.lblThoigian.Name = "lblThoigian";
-            this.lblThoigian.Size = new System.Drawing.Size(98, 28);
+            this.lblThoigian.Size = new System.Drawing.Size(112, 35);
             this.lblThoigian.Text = "Thời gian";
             // 
             // lblChuongtrinh
@@ -390,7 +392,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblChuongtrinh.Font = new System.Drawing.Font("Nunito Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChuongtrinh.ForeColor = System.Drawing.Color.White;
             this.lblChuongtrinh.Name = "lblChuongtrinh";
-            this.lblChuongtrinh.Size = new System.Drawing.Size(111, 28);
+            this.lblChuongtrinh.Size = new System.Drawing.Size(127, 35);
             this.lblChuongtrinh.Text = "Sẵn sàng !!";
             // 
             // statusStrip1
@@ -402,10 +404,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblChuongtrinh});
-            this.statusStrip1.Location = new System.Drawing.Point(-3, 1030);
+            this.statusStrip1.Location = new System.Drawing.Point(-3, 1288);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1764, 34);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 15, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1984, 42);
             this.statusStrip1.TabIndex = 28;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.UseWaitCursor = true;
@@ -415,7 +417,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblNguoidung.Font = new System.Drawing.Font("Nunito Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNguoidung.ForeColor = System.Drawing.Color.White;
             this.lblNguoidung.Name = "lblNguoidung";
-            this.lblNguoidung.Size = new System.Drawing.Size(119, 28);
+            this.lblNguoidung.Size = new System.Drawing.Size(136, 35);
             this.lblNguoidung.Text = "Nhân viên : ";
             // 
             // lblQuyen
@@ -423,7 +425,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblQuyen.ActiveLinkColor = System.Drawing.Color.Red;
             this.lblQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(85, 28);
+            this.lblQuyen.Size = new System.Drawing.Size(97, 35);
             this.lblQuyen.Text = "Khương";
             // 
             // statusStrip2
@@ -436,10 +438,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblNguoidung,
             this.lblQuyen});
-            this.statusStrip2.Location = new System.Drawing.Point(-3, 996);
+            this.statusStrip2.Location = new System.Drawing.Point(-3, 1245);
             this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip2.Size = new System.Drawing.Size(349, 34);
+            this.statusStrip2.Padding = new System.Windows.Forms.Padding(1, 0, 15, 0);
+            this.statusStrip2.Size = new System.Drawing.Size(393, 42);
             this.statusStrip2.TabIndex = 29;
             this.statusStrip2.Text = "statusStrip2";
             this.statusStrip2.UseWaitCursor = true;
@@ -462,12 +464,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.báoCáoToolStripMenuItem,
             this.trợGiúpToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(-3, 124);
+            this.menuStrip1.Location = new System.Drawing.Point(-3, 155);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(349, 1200);
+            this.menuStrip1.Size = new System.Drawing.Size(393, 1500);
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
@@ -487,38 +488,38 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnHethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHethong.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.btnHethong.Name = "btnHethong";
-            this.btnHethong.Size = new System.Drawing.Size(343, 30);
+            this.btnHethong.Size = new System.Drawing.Size(386, 35);
             this.btnHethong.Text = "     &Hệ thống              ";
             this.btnHethong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // trởLạiTrangChínhToolStripMenuItem
             // 
             this.trởLạiTrangChínhToolStripMenuItem.Name = "trởLạiTrangChínhToolStripMenuItem";
-            this.trởLạiTrangChínhToolStripMenuItem.Size = new System.Drawing.Size(319, 30);
+            this.trởLạiTrangChínhToolStripMenuItem.Size = new System.Drawing.Size(372, 40);
             this.trởLạiTrangChínhToolStripMenuItem.Text = "1. Trở lại trang chính";
             this.trởLạiTrangChínhToolStripMenuItem.Click += new System.EventHandler(this.Main_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(316, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(369, 6);
             // 
             // Quanlynguoidung
             // 
             this.Quanlynguoidung.Name = "Quanlynguoidung";
-            this.Quanlynguoidung.Size = new System.Drawing.Size(319, 30);
+            this.Quanlynguoidung.Size = new System.Drawing.Size(372, 40);
             this.Quanlynguoidung.Text = "2. Quản lý người dùng";
             this.Quanlynguoidung.Click += new System.EventHandler(this.Quanlynguoidung_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(316, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(369, 6);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(319, 30);
+            this.Exit.Size = new System.Drawing.Size(372, 40);
             this.Exit.Text = "3. Kết thúc chương trình";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -537,26 +538,26 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.danhMụcTừĐiểnToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.danhMụcTừĐiểnToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.danhMụcTừĐiểnToolStripMenuItem.Name = "danhMụcTừĐiểnToolStripMenuItem";
-            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(343, 30);
+            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(386, 35);
             this.danhMụcTừĐiểnToolStripMenuItem.Text = "     &Danh mục từ điển     ";
             this.danhMụcTừĐiểnToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DMThuoc
             // 
             this.DMThuoc.Name = "DMThuoc";
-            this.DMThuoc.Size = new System.Drawing.Size(337, 30);
+            this.DMThuoc.Size = new System.Drawing.Size(392, 40);
             this.DMThuoc.Text = "1. Danh mục thuốc";
             this.DMThuoc.Click += new System.EventHandler(this.DMThuoc_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(334, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(389, 6);
             // 
             // DMNhomthuoc
             // 
             this.DMNhomthuoc.Name = "DMNhomthuoc";
-            this.DMNhomthuoc.Size = new System.Drawing.Size(337, 30);
+            this.DMNhomthuoc.Size = new System.Drawing.Size(392, 40);
             this.DMNhomthuoc.Text = "2. Danh mục nhóm thuốc";
             this.DMNhomthuoc.Click += new System.EventHandler(this.DMNhomthuoc_Click);
             // 
@@ -566,9 +567,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.label2.Font = new System.Drawing.Font("Nunito Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(989, 17);
+            this.label2.Location = new System.Drawing.Point(1113, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(447, 55);
+            this.label2.Size = new System.Drawing.Size(539, 66);
             this.label2.TabIndex = 33;
             this.label2.Text = "Danh mục khách hàng";
             this.label2.UseWaitCursor = true;
@@ -577,10 +578,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.pictureBox4.Location = new System.Drawing.Point(345, -2);
+            this.pictureBox4.Location = new System.Drawing.Point(388, -2);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1720, 102);
+            this.pictureBox4.Size = new System.Drawing.Size(1935, 128);
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.UseWaitCursor = true;
@@ -590,10 +591,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblTong.AutoSize = true;
             this.lblTong.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTong.ForeColor = System.Drawing.Color.Red;
-            this.lblTong.Location = new System.Drawing.Point(1777, 879);
+            this.lblTong.Location = new System.Drawing.Point(1999, 1099);
             this.lblTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTong.Name = "lblTong";
-            this.lblTong.Size = new System.Drawing.Size(89, 23);
+            this.lblTong.Size = new System.Drawing.Size(105, 28);
             this.lblTong.TabIndex = 72;
             this.lblTong.Text = "Tổng số : ";
             this.lblTong.UseWaitCursor = true;
@@ -601,10 +602,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // txtMa
             // 
             this.txtMa.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(236, 622);
+            this.txtMa.Location = new System.Drawing.Point(266, 778);
             this.txtMa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(241, 31);
+            this.txtMa.Size = new System.Drawing.Size(271, 35);
             this.txtMa.TabIndex = 71;
             this.txtMa.UseWaitCursor = true;
             this.txtMa.Visible = false;
@@ -614,10 +615,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(524, 879);
+            this.label3.Location = new System.Drawing.Point(590, 1099);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(319, 23);
+            this.label3.Size = new System.Drawing.Size(378, 28);
             this.label3.TabIndex = 70;
             this.label3.Text = "Kích đúp để sửa thông tin người dùng";
             this.label3.UseWaitCursor = true;
@@ -628,10 +629,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTK.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
-            this.btnTK.Location = new System.Drawing.Point(1232, 185);
-            this.btnTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTK.Location = new System.Drawing.Point(1220, 218);
+            this.btnTK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnTK.Name = "btnTK";
-            this.btnTK.Size = new System.Drawing.Size(135, 46);
+            this.btnTK.Size = new System.Drawing.Size(152, 58);
             this.btnTK.TabIndex = 3;
             this.btnTK.Text = "&Tìm lại";
             this.btnTK.UseVisualStyleBackColor = false;
@@ -644,10 +645,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoc.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoc.ForeColor = System.Drawing.Color.White;
-            this.btnLoc.Location = new System.Drawing.Point(1089, 185);
-            this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLoc.Location = new System.Drawing.Point(1059, 218);
+            this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(135, 46);
+            this.btnLoc.Size = new System.Drawing.Size(152, 58);
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "&Lọc";
             this.btnLoc.UseVisualStyleBackColor = false;
@@ -659,10 +660,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(828, 167);
+            this.label1.Location = new System.Drawing.Point(766, 196);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 23);
+            this.label1.Size = new System.Drawing.Size(166, 28);
             this.label1.TabIndex = 67;
             this.label1.Text = "Giá trị tìm kiếm";
             this.label1.UseWaitCursor = true;
@@ -671,10 +672,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.comGT.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comGT.FormattingEnabled = true;
-            this.comGT.Location = new System.Drawing.Point(809, 194);
-            this.comGT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comGT.Location = new System.Drawing.Point(744, 229);
+            this.comGT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comGT.Name = "comGT";
-            this.comGT.Size = new System.Drawing.Size(227, 30);
+            this.comGT.Size = new System.Drawing.Size(255, 34);
             this.comGT.TabIndex = 1;
             this.comGT.UseWaitCursor = true;
             // 
@@ -686,10 +687,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             "Mã khách",
             "Tên Khách",
             "Địa chỉ"});
-            this.comTruong.Location = new System.Drawing.Point(528, 194);
-            this.comTruong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comTruong.Location = new System.Drawing.Point(428, 229);
+            this.comTruong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comTruong.Name = "comTruong";
-            this.comTruong.Size = new System.Drawing.Size(223, 30);
+            this.comTruong.Size = new System.Drawing.Size(250, 34);
             this.comTruong.TabIndex = 0;
             this.comTruong.UseWaitCursor = true;
             this.comTruong.SelectedIndexChanged += new System.EventHandler(this.comTruong_SelectedIndexChanged);
@@ -699,10 +700,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label8.Location = new System.Drawing.Point(539, 167);
+            this.label8.Location = new System.Drawing.Point(440, 196);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 23);
+            this.label8.Size = new System.Drawing.Size(119, 28);
             this.label8.TabIndex = 64;
             this.label8.Text = "Tên trường";
             this.label8.UseWaitCursor = true;
@@ -713,10 +714,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(1743, 935);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXoa.Location = new System.Drawing.Point(1961, 1169);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(151, 46);
+            this.btnXoa.Size = new System.Drawing.Size(170, 58);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "&Xoá";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -729,12 +730,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnAddnew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddnew.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
-            this.btnAddnew.Location = new System.Drawing.Point(1717, 178);
-            this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddnew.Location = new System.Drawing.Point(1380, 218);
+            this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddnew.Name = "btnAddnew";
-            this.btnAddnew.Size = new System.Drawing.Size(176, 57);
+            this.btnAddnew.Size = new System.Drawing.Size(154, 58);
             this.btnAddnew.TabIndex = 4;
-            this.btnAddnew.Text = "+   &Thêm mới";
+            this.btnAddnew.Text = "&Thêm";
             this.btnAddnew.UseVisualStyleBackColor = false;
             this.btnAddnew.UseWaitCursor = true;
             this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click);
@@ -745,10 +746,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnLast.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLast.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLast.ForeColor = System.Drawing.Color.White;
-            this.btnLast.Location = new System.Drawing.Point(961, 935);
-            this.btnLast.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLast.Location = new System.Drawing.Point(1081, 1169);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(135, 46);
+            this.btnLast.Size = new System.Drawing.Size(152, 58);
             this.btnLast.TabIndex = 61;
             this.btnLast.Text = "&Cuối";
             this.btnLast.UseVisualStyleBackColor = false;
@@ -761,10 +762,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNext.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(817, 935);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnNext.Location = new System.Drawing.Point(919, 1169);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(135, 46);
+            this.btnNext.Size = new System.Drawing.Size(152, 58);
             this.btnNext.TabIndex = 60;
             this.btnNext.Text = "&Sau";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -777,10 +778,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnPrv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrv.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrv.ForeColor = System.Drawing.Color.White;
-            this.btnPrv.Location = new System.Drawing.Point(672, 935);
-            this.btnPrv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPrv.Location = new System.Drawing.Point(756, 1169);
+            this.btnPrv.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnPrv.Name = "btnPrv";
-            this.btnPrv.Size = new System.Drawing.Size(135, 46);
+            this.btnPrv.Size = new System.Drawing.Size(152, 58);
             this.btnPrv.TabIndex = 59;
             this.btnPrv.Text = "&Trước";
             this.btnPrv.UseVisualStyleBackColor = false;
@@ -793,10 +794,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnFirst.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFirst.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFirst.ForeColor = System.Drawing.Color.White;
-            this.btnFirst.Location = new System.Drawing.Point(528, 935);
-            this.btnFirst.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFirst.Location = new System.Drawing.Point(594, 1169);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(135, 46);
+            this.btnFirst.Size = new System.Drawing.Size(152, 58);
             this.btnFirst.TabIndex = 58;
             this.btnFirst.Text = "&Đầu";
             this.btnFirst.UseVisualStyleBackColor = false;
@@ -824,11 +825,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.EMAIL,
             this.SDT});
             this.grdData.DataSource = this.tblKhachhangBindingSource;
-            this.grdData.Location = new System.Drawing.Point(527, 274);
-            this.grdData.Margin = new System.Windows.Forms.Padding(4);
+            this.grdData.Location = new System.Drawing.Point(428, 327);
+            this.grdData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1367, 601);
+            this.grdData.Size = new System.Drawing.Size(1428, 751);
             this.grdData.TabIndex = 57;
             this.grdData.UseWaitCursor = true;
             this.grdData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellClick);
@@ -841,7 +842,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.MAKHACH.HeaderText = "Mã khách";
             this.MAKHACH.MinimumWidth = 6;
             this.MAKHACH.Name = "MAKHACH";
-            this.MAKHACH.Width = 117;
+            this.MAKHACH.Width = 140;
             // 
             // TENKHACH
             // 
@@ -868,7 +869,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.EMAIL.HeaderText = "Email";
             this.EMAIL.MinimumWidth = 6;
             this.EMAIL.Name = "EMAIL";
-            this.EMAIL.Width = 85;
+            this.EMAIL.Width = 102;
             // 
             // SDT
             // 
@@ -877,7 +878,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.SDT.HeaderText = "Số điện thoại";
             this.SDT.MinimumWidth = 6;
             this.SDT.Name = "SDT";
-            this.SDT.Width = 147;
+            this.SDT.Width = 176;
             // 
             // tblKhachhangBindingSource
             // 
@@ -899,12 +900,46 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.timer2.Interval = 10000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // btnDel
+            // 
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDel.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(1704, 218);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(152, 58);
+            this.btnDel.TabIndex = 73;
+            this.btnDel.Text = "&Xóa";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.UseWaitCursor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEdit.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(1542, 218);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(154, 58);
+            this.btnEdit.TabIndex = 74;
+            this.btnEdit.Text = "&Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.UseWaitCursor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // frmDMKhachhang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1941, 1063);
+            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnDel);
             this.Controls.Add(this.lblTong);
             this.Controls.Add(this.txtMa);
             this.Controls.Add(this.label3);
@@ -1033,5 +1068,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private System.Windows.Forms.ToolStripMenuItem doanhThuTheoThángToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem doanhThuTheoKháchHàngToolStripMenuItem;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

@@ -249,7 +249,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.DMNhacungcap.Name = "DMNhacungcap";
             this.DMNhacungcap.Size = new System.Drawing.Size(398, 34);
-            this.DMNhacungcap.Text = "5. Danh mục nhà cung cấp";
+            this.DMNhacungcap.Text = "4. Danh mục nhà cung cấp";
             this.DMNhacungcap.Click += new System.EventHandler(this.DMNhacungcap_Click);
             // 
             // quảnLýKhoToolStripMenuItem
