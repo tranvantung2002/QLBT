@@ -67,7 +67,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             {
                 if (i < 4)
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-915T4IQU\HUYENVO;Initial Catalog=THUOC;Integrated Security=True");
                     try
                     {
                         conn.Open();

@@ -311,9 +311,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void frmQuanlynhanvien_Load(object sender, EventArgs e)
         {
-            FontFamily f = new FontFamily("Nunito");/*Khởi tạo font mới*/
-            grdData.Font = new Font(f, 10,FontStyle.Bold);/* Gnas forn mới cho font cần đổi*/
-            grdData.ForeColor = Color.Black;
+            //FontFamily f = new FontFamily("Nunito");/*Khởi tạo font mới*/
+            //grdData.Font = new Font(f, 10,FontStyle.Bold);/* Gnas forn mới cho font cần đổi*/
+            //grdData.ForeColor = Color.Black;
             Class.Functions.Connect();
             ketnoi();
             lblChuongtrinh.Text = "Quản lý người dùng !!! Đang chạy ....";

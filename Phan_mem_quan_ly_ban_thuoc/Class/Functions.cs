@@ -17,7 +17,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
         public static void Connect()
         {
             //Thiết lập giá trị cho chuỗi kết nối
-            connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
+            //connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
+            connString = @"Data Source=LAPTOP-915T4IQU\HUYENVO;Initial Catalog=THUOC;Integrated Security=True";
             Conn = new SqlConnection();
             Conn.ConnectionString = connString; 	
             Conn.Open();   

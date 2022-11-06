@@ -127,7 +127,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(357, 65);
-            this.btnAdd.TabIndex = 3;
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Thoát";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -141,7 +141,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(357, 65);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -153,7 +153,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 2);
-            this.panel2.TabIndex = 17;
+            this.panel2.TabIndex = 3;
             // 
             // panel1
             // 
@@ -162,7 +162,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 2);
-            this.panel1.TabIndex = 16;
+            this.panel1.TabIndex = 1;
             // 
             // pictureBox3
             // 
@@ -184,7 +184,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.lblThongbao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongbao.Name = "lblThongbao";
             this.lblThongbao.Size = new System.Drawing.Size(0, 22);
-            this.lblThongbao.TabIndex = 23;
+            this.lblThongbao.TabIndex = 4;
             // 
             // label2
             // 
@@ -194,7 +194,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.label2.Location = new System.Drawing.Point(168, 292);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 25);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Username";
             // 
             // label3
@@ -205,7 +205,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.label3.Location = new System.Drawing.Point(168, 379);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 25);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             // 
             // frmLogin

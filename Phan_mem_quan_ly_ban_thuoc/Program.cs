@@ -22,10 +22,10 @@ namespace Phan_mem_quan_ly_ban_thuoc
             
             frmLogin a = new frmLogin();
             Application.Run(a);
-            if(a.islogin==true)
-            {
+            //if(a.islogin==true)
+            //{
                 Application.Run(new Forms.frmMain(a.fullname,a.quyenhan));
-            }
+            //}
             
             
             //Application.Run(new Forms.frmMain("NV002", "admin"));
