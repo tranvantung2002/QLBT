@@ -46,7 +46,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            ketnoi();
             this.Close();
         }
 
@@ -135,8 +134,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
                 sql = "INSERT INTO tblNhanvien(MANHANVIEN,TENNHANVIEN,SDT, DIACHI, TAIKHOAN, MATKHAU, QUYEN) " +
                 "VALUES(N'" + txtMa.Text.Trim() + "', N'" + txtTen.Text.Trim() + "', N'" + mskDienthoai.Text + "', N'" + txtDiachi.Text.Trim() +"',N'" + txtTaikhoan.Text.Trim() + "', N'" + txtMatkhau.Text.Trim() + "', N'" + quyenhan + "')";
                 Class.Functions.RunSql(sql);
-                MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ketnoi();
+                if (MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                {
+                    ketnoi();
+                }
             }
             reset1();
         }

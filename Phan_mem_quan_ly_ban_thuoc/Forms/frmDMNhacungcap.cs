@@ -341,6 +341,29 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhà cung cấp này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                int i = grdData.CurrentRow.Index;
+                sql = "delete from tblNhacungcap where MANCC = '" + grdData.Rows[i].Cells["MANCC"].Value.ToString() + "';";
+                Class.Functions.RunSqlDel(sql);
+                ketnoi();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int i = grdData.CurrentRow.Index;
+            string manhanvien = grdData.Rows[i].Cells["MANCC"].Value.ToString();
+            string tennhanvien = grdData.Rows[i].Cells["TENNCC"].Value.ToString();
+            string diachi = grdData.Rows[i].Cells["SDT"].Value.ToString();
+            string sodienthoai = grdData.Rows[i].Cells["EMAIL"].Value.ToString();
+            string taikhoan = grdData.Rows[i].Cells["MST"].Value.ToString();
+            Forms_Update.frmUp_nhacungcap f = new Forms_Update.frmUp_nhacungcap(manhanvien, tennhanvien, diachi, sodienthoai, taikhoan);
+            f.ShowDialog();
+        }
+
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;

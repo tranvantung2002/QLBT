@@ -103,7 +103,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
             SqlDataAdapter Mydata = new SqlDataAdapter(sql, Conn);
             DataTable table = new DataTable();
             table.Clear();
-            Mydata.Fill(table);
+            try
+            {
+                Mydata.Fill(table);
+            }
+            catch 
+            {
+                MessageBox.Show("Hệ thống đang tải dữ liệu");
+            }
             cbo.DataSource = table;
             cbo.ValueMember = ma;    // Truong gia tri
             cbo.DisplayMember = ten;    // Truong hien thi
