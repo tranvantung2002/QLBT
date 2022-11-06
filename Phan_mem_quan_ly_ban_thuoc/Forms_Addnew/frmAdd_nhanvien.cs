@@ -36,10 +36,17 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             }
             else rdAdmin.Checked = false;
         }
-
+        private void ketnoi()
+        {
+            sql = "select MANHANVIEN,TENNHANVIEN,DIACHI,SDT,TAIKHOAN,MATKHAU,QUYEN from tblNhanvien ";
+            khuong = Class.Functions.GetDataToTable(sql);
+            grdData.DataSource = khuong;
+            grdData.Refresh();
+        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            ketnoi();
             this.Close();
         }
 
@@ -65,14 +72,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
         {
             Class.Functions.Connect();
             ketnoi();
-        }
-
-        private void ketnoi()
-        {
-            sql = "select MANHANVIEN,TENNHANVIEN,DIACHI,SDT,TAIKHOAN,MATKHAU,QUYEN from tblNhanvien ";
-            khuong = Class.Functions.GetDataToTable(sql);
-            grdData.DataSource = khuong;
-            grdData.Refresh();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -137,6 +136,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
                 "VALUES(N'" + txtMa.Text.Trim() + "', N'" + txtTen.Text.Trim() + "', N'" + mskDienthoai.Text + "', N'" + txtDiachi.Text.Trim() +"',N'" + txtTaikhoan.Text.Trim() + "', N'" + txtMatkhau.Text.Trim() + "', N'" + quyenhan + "')";
                 Class.Functions.RunSql(sql);
                 MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ketnoi();
             }
             reset1();
         }

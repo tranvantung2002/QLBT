@@ -350,7 +350,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
                 int i = grdData.CurrentRow.Index;
                 sql = "delete from tblKhachhang where MAKHACH = '" + grdData.Rows[i].Cells["MAKHACH"].Value.ToString() + "';";
                 Class.Functions.RunSqlDel(sql);
-                grdData.Refresh();
+                ketnoi();
             }
         }
 

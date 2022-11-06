@@ -247,7 +247,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void timer2_Tick(object sender, EventArgs e)
         {  
-                ketnoi();
+                //ketnoi();
         }
 
 
@@ -360,6 +360,31 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         {
             Forms_Messagebox.frm_Message_Hotro f = new Forms_Messagebox.frm_Message_Hotro();
             f.ShowDialog();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int i = grdData.CurrentRow.Index;
+            string manhanvien = grdData.Rows[i].Cells["MANHANVIEN"].Value.ToString();
+            string tennhanvien = grdData.Rows[i].Cells["TENNHANVIEN"].Value.ToString();
+            string diachi = grdData.Rows[i].Cells["DIACHI"].Value.ToString();
+            string sodienthoai = grdData.Rows[i].Cells["SDT"].Value.ToString();
+            string taikhoan = grdData.Rows[i].Cells["TAIKHOAN"].Value.ToString();
+            string matkhau = grdData.Rows[i].Cells["MATKHAU"].Value.ToString();
+            string quyen = grdData.Rows[i].Cells["QUYEN"].Value.ToString();
+            Forms_Update.frmUp_nhanvien f = new Forms_Update.frmUp_nhanvien(manhanvien, tennhanvien, diachi, sodienthoai, taikhoan, matkhau, quyen);
+            f.ShowDialog();
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                int i = grdData.CurrentRow.Index;
+                sql = "delete from tblNhanvien where MANHANVIEN = '" + grdData.Rows[i].Cells["MANHANVIEN"].Value.ToString() + "';";
+                Class.Functions.RunSqlDel(sql);
+                ketnoi();
+            }
         }
 
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)

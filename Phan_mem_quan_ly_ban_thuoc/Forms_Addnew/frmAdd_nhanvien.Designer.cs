@@ -31,7 +31,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdd_nhanvien));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +66,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.mskDienthoai = new System.Windows.Forms.MaskedTextBox();
             this.rdAdmin = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
@@ -104,7 +110,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(71, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 46);
+            this.label1.Size = new System.Drawing.Size(499, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "Thêm mới người sử dụng";
             // 
@@ -114,7 +120,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label2.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(32, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 23);
+            this.label2.Size = new System.Drawing.Size(161, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mã nhân viên :";
             // 
@@ -123,7 +129,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtMa.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMa.Location = new System.Drawing.Point(165, 92);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(233, 31);
+            this.txtMa.Size = new System.Drawing.Size(233, 35);
             this.txtMa.TabIndex = 0;
             // 
             // txtTen
@@ -131,7 +137,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtTen.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTen.Location = new System.Drawing.Point(165, 152);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(233, 31);
+            this.txtTen.Size = new System.Drawing.Size(233, 35);
             this.txtTen.TabIndex = 1;
             // 
             // label3
@@ -140,7 +146,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label3.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(28, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 23);
+            this.label3.Size = new System.Drawing.Size(167, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tên nhân viên :";
             // 
@@ -150,7 +156,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label4.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(32, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 23);
+            this.label4.Size = new System.Drawing.Size(161, 29);
             this.label4.TabIndex = 7;
             this.label4.Text = "Số điện thoại :";
             // 
@@ -159,7 +165,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtDiachi.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.Location = new System.Drawing.Point(165, 271);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(529, 31);
+            this.txtDiachi.Size = new System.Drawing.Size(529, 35);
             this.txtDiachi.TabIndex = 6;
             // 
             // label5
@@ -168,25 +174,25 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label5.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(84, 275);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 23);
+            this.label5.Size = new System.Drawing.Size(95, 29);
             this.label5.TabIndex = 9;
             this.label5.Text = "Địa chỉ :";
             // 
             // txtMatkhau
             // 
             this.txtMatkhau.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatkhau.Location = new System.Drawing.Point(522, 150);
+            this.txtMatkhau.Location = new System.Drawing.Point(522, 141);
             this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(233, 31);
+            this.txtMatkhau.Size = new System.Drawing.Size(233, 35);
             this.txtMatkhau.TabIndex = 4;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(421, 153);
+            this.label7.Location = new System.Drawing.Point(417, 147);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 23);
+            this.label7.Size = new System.Drawing.Size(121, 29);
             this.label7.TabIndex = 13;
             this.label7.Text = "Mật khẩu :";
             // 
@@ -195,7 +201,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtTaikhoan.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaikhoan.Location = new System.Drawing.Point(522, 92);
             this.txtTaikhoan.Name = "txtTaikhoan";
-            this.txtTaikhoan.Size = new System.Drawing.Size(233, 31);
+            this.txtTaikhoan.Size = new System.Drawing.Size(233, 35);
             this.txtTaikhoan.TabIndex = 3;
             // 
             // label8
@@ -204,7 +210,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label8.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(417, 92);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 23);
+            this.label8.Size = new System.Drawing.Size(126, 29);
             this.label8.TabIndex = 11;
             this.label8.Text = "Tài khoản :";
             // 
@@ -214,7 +220,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label6.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(446, 214);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 23);
+            this.label6.Size = new System.Drawing.Size(91, 29);
             this.label6.TabIndex = 15;
             this.label6.Text = "Quyền :";
             // 
@@ -224,7 +230,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(179, 334);
+            this.btnUpdate.Location = new System.Drawing.Point(242, 334);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(139, 56);
             this.btnUpdate.TabIndex = 7;
@@ -238,12 +244,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.btnThemlai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemlai.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemlai.ForeColor = System.Drawing.Color.White;
-            this.btnThemlai.Location = new System.Drawing.Point(334, 334);
+            this.btnThemlai.Location = new System.Drawing.Point(12, 334);
             this.btnThemlai.Name = "btnThemlai";
             this.btnThemlai.Size = new System.Drawing.Size(139, 56);
             this.btnThemlai.TabIndex = 8;
             this.btnThemlai.Text = "Thêm mới";
             this.btnThemlai.UseVisualStyleBackColor = false;
+            this.btnThemlai.Visible = false;
             this.btnThemlai.Click += new System.EventHandler(this.btnThemlai_Click);
             // 
             // btnThoat
@@ -252,7 +259,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThoat.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(489, 334);
+            this.btnThoat.Location = new System.Drawing.Point(398, 334);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(139, 56);
             this.btnThoat.TabIndex = 9;
@@ -264,14 +271,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -393,7 +400,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.mskDienthoai.Location = new System.Drawing.Point(166, 211);
             this.mskDienthoai.Mask = "(999) 000-0000";
             this.mskDienthoai.Name = "mskDienthoai";
-            this.mskDienthoai.Size = new System.Drawing.Size(233, 31);
+            this.mskDienthoai.Size = new System.Drawing.Size(233, 35);
             this.mskDienthoai.TabIndex = 2;
             // 
             // rdAdmin
@@ -402,17 +409,89 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.rdAdmin.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdAdmin.Location = new System.Drawing.Point(522, 215);
             this.rdAdmin.Name = "rdAdmin";
-            this.rdAdmin.Size = new System.Drawing.Size(86, 27);
+            this.rdAdmin.Size = new System.Drawing.Size(101, 32);
             this.rdAdmin.TabIndex = 5;
             this.rdAdmin.Text = "Admin";
             this.rdAdmin.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(136, 92);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 29);
+            this.label9.TabIndex = 102;
+            this.label9.Text = "*";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(136, 152);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 29);
+            this.label10.TabIndex = 103;
+            this.label10.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(136, 211);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(23, 29);
+            this.label11.TabIndex = 104;
+            this.label11.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(493, 92);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 29);
+            this.label12.TabIndex = 105;
+            this.label12.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(493, 147);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(23, 29);
+            this.label13.TabIndex = 106;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(137, 271);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 29);
+            this.label14.TabIndex = 107;
+            this.label14.Text = "*";
+            // 
             // frmAdd_nhanvien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(794, 449);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.rdAdmin);
             this.Controls.Add(this.mskDienthoai);
             this.Controls.Add(this.pictureBox5);
@@ -493,5 +572,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.MaskedTextBox mskDienthoai;
         private System.Windows.Forms.CheckBox rdAdmin;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

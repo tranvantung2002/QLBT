@@ -27,8 +27,9 @@ namespace Phan_mem_quan_ly_ban_thuoc
                 Application.Run(new Forms.frmMain(a.fullname,a.quyenhan));
             }
             */
-            Application.Run(new Forms.frmDMKhachhang("NV001", "admin"));
+            //Application.Run(new Forms.frmDMKhachhang("NV001", "admin"));
             //Application.Run(new Forms.frmMain("NV002", "admin"));
+            Application.Run(new Forms.frmQuanlynhanvien("NV001", "admin"));
             /**/
         }
 
