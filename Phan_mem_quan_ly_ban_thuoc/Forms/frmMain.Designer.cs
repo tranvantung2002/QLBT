@@ -158,6 +158,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnHethong.Size = new System.Drawing.Size(386, 30);
             this.btnHethong.Text = "     &Hệ thống              ";
             this.btnHethong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHethong.Click += new System.EventHandler(this.btnHethong_Click);
             // 
             // Main
             // 
@@ -205,7 +206,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.danhMụcTừĐiểnToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.danhMụcTừĐiểnToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.danhMụcTừĐiểnToolStripMenuItem.Name = "danhMụcTừĐiểnToolStripMenuItem";
-            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(383, 30);
             this.danhMụcTừĐiểnToolStripMenuItem.Text = "     &Danh mục từ điển     ";
             this.danhMụcTừĐiểnToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -268,6 +269,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
             this.quảnLýKhoToolStripMenuItem.Text = "     &Quản lý kho                 ";
             this.quảnLýKhoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quảnLýKhoToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKhoToolStripMenuItem_Click);
             // 
             // HDNhap
             // 
@@ -311,7 +313,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.bánHàngToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bánHàngToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
-            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(383, 30);
             this.bánHàngToolStripMenuItem.Text = "     &Bán hàng                   ";
             this.bánHàngToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -347,7 +349,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.báoCáoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.báoCáoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(383, 30);
             this.báoCáoToolStripMenuItem.Text = "     Báo &cáo                      ";
             this.báoCáoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -427,7 +429,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.trợGiúpToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.trợGiúpToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(383, 30);
             this.trợGiúpToolStripMenuItem.Text = "     &Trợ giúp                      ";
             this.trợGiúpToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -536,9 +538,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1.Location = new System.Drawing.Point(463, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1311, 108);
+            this.label1.Size = new System.Drawing.Size(0, 108);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Phần mềm quản lý bán thuốc";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmMain
@@ -546,7 +547,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.BackgroundImage = global::Phan_mem_quan_ly_ban_thuoc.Properties.Resources.bg;
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip3);
             this.Controls.Add(this.statusStrip2);
