@@ -12,17 +12,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 {
     public partial class frmMain : Form
     {
-        public frmMain(string fullname,string quyenhan)
+        string name = "", quyen = "";
+        public frmMain(string fullname, string quyenhan)
         {
             InitializeComponent();
-            lblNguoidung.Text =  fullname;
-            lblQuyen.Text = quyenhan; 
+            name = fullname;
+            quyen = quyenhan;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lblThoigian.Text = System.DateTime.Now.ToString();
-        }
 
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -30,121 +27,80 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
-        private void Dangnhaplai_Click(object sender, EventArgs e)
-        {
-            frmLogin f = new frmLogin();
-            f.Show();
-            this.Visible = false;
-        }
 
         private void Quanlynguoidung_Click(object sender, EventArgs e)
         {
-            
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            if(hello1=="nhanvien")
+
+            if (quyen.ToLower() == "nhanvien".ToLower())
             {
                 MessageBox.Show("Bạn không phải là người quản lý !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                Forms.frmQuanlynhanvien f = new Forms.frmQuanlynhanvien(hello,hello1);
-                f.Show();
-                this.Visible = false;
-            }    
-            
+                Forms.frmQuanlynhanvien f = new Forms.frmQuanlynhanvien();
+                LoadForm(f, "Quản lý nhân viên");
+            }
+
         }
 
         private void DMThuoc_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmDMThuoc f = new Forms.frmDMThuoc(hello,hello1);
-            f.Show();
-            this.Visible = false;
+            Forms.frmDMThuoc f = new Forms.frmDMThuoc();
+            LoadForm(f, "Danh mục thuốc");
         }
 
         private void DMNhomthuoc_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmDMNhomthuoc f = new Forms.frmDMNhomthuoc(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms.frmDMNhomthuoc f = new Forms.frmDMNhomthuoc();
+            LoadForm(f, "Quản nhóm thuốc");
         }
 
         private void DMKhachhang_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmDMKhachhang f = new Forms.frmDMKhachhang(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms.frmDMKhachhang f = new Forms.frmDMKhachhang();
+            LoadForm(f, "Quản lý khách hàng");
         }
 
         private void DMNhacungcap_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmDMNhacungcap f = new Forms.frmDMNhacungcap(hello, hello1);
-            f.Show();
-            this.Visible = false;
-
+            Forms.frmDMNhacungcap f = new Forms.frmDMNhacungcap();
+            LoadForm(f, "Quản lý nhà cung cấp");
         }
 
         private void HDNhap_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms_Quanlykho.frmHDNhap f = new Forms_Quanlykho.frmHDNhap(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms_Quanlykho.frmHDNhap f = new Forms_Quanlykho.frmHDNhap();
+            LoadForm(f, "Quản lý hoá đơn nhập");
         }
 
         private void Tonkho_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms_Quanlykho.frmTonkho f = new Forms_Quanlykho.frmTonkho(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms_Quanlykho.frmTonkho f = new Forms_Quanlykho.frmTonkho();
+            LoadForm(f, "Quản lý hàng tồn kho");
         }
 
         private void Truyxuat_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms_Quanlykho.frmTruyxuat f = new Forms_Quanlykho.frmTruyxuat(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms_Quanlykho.frmTruyxuat f = new Forms_Quanlykho.frmTruyxuat();
+            LoadForm(f, "Quản lý truy xuất");
         }
 
         private void LapHD_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms_Banhang.frmLapHD f = new Forms_Banhang.frmLapHD(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms_Banhang.frmLapHD f = new Forms_Banhang.frmLapHD();
+            LoadForm(f, "Quản lý lập hoá đơn");
         }
 
         private void TKHoadon_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms_Banhang.frmTKHoadon f = new Forms_Banhang.frmTKHoadon(hello, hello1);
-            f.Show();
-            this.Visible = false;
+            Forms_Banhang.frmTKHoadon f = new Forms_Banhang.frmTKHoadon();
+            LoadForm(f, "Quản lý hoá đơn");
         }
 
         private void Main_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmMain f = new Forms.frmMain(hello,hello1);
-            f.Show();
-            this.Visible = false;
-            
+            panelApp.Controls.Clear();
+            LbTieuDe.Text = "Chương trình quản lí bán thuốc";
         }
 
         private void Huongdan_Click(object sender, EventArgs e)
@@ -155,43 +111,40 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void DT_Nhomthuoc_Click(object sender, EventArgs e)
         {
-            string hello= lblNguoidung.Text;
-            Forms_SP_Reports.frm_SP_Doanhthu_Nhomthuoc f = new Forms_SP_Reports.frm_SP_Doanhthu_Nhomthuoc(hello);
+            Forms_SP_Reports.frm_SP_Doanhthu_Nhomthuoc f = new Forms_SP_Reports.frm_SP_Doanhthu_Nhomthuoc();
             f.ShowDialog();
         }
 
         private void DT_Theothang_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            Forms_SP_Reports.frm_SP_Doanhthu_Theothang f = new Forms_SP_Reports.frm_SP_Doanhthu_Theothang(hello);
+            Forms_SP_Reports.frm_SP_Doanhthu_Theothang f = new Forms_SP_Reports.frm_SP_Doanhthu_Theothang();
             f.ShowDialog();
         }
 
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            Forms_SP_Reports.frm_SP_DT_Khachhang f = new Forms_SP_Reports.frm_SP_DT_Khachhang(hello);
+            Forms_SP_Reports.frm_SP_DT_Khachhang f = new Forms_SP_Reports.frm_SP_DT_Khachhang();
             f.ShowDialog();
         }
 
         private void BCNhaphang_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            Forms_SP_Reports.frm_SP_Tonkho f = new Forms_SP_Reports.frm_SP_Tonkho(hello);
+            Forms_SP_Reports.frm_SP_Tonkho f = new Forms_SP_Reports.frm_SP_Tonkho();
             f.ShowDialog();
         }
 
         private void BCHSD_Click(object sender, EventArgs e)
         {
-            string hello = lblNguoidung.Text;
-            Forms_SP_Reports.frm_SP_Thuoc_Hethan f = new Forms_SP_Reports.frm_SP_Thuoc_Hethan(hello);
+            Forms_SP_Reports.frm_SP_Thuoc_Hethan f = new Forms_SP_Reports.frm_SP_Thuoc_Hethan();
             f.ShowDialog();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(141,153,174);
-
+            this.BackColor = Color.FromArgb(141, 153, 174);
+            lblNguoidung.Text = $"Người dùng  : {name} \nQuyền : {quyen}";
+            lbtime.Text = $"Thời gian hiện tại là  :{DateTime.Now.ToString()}";
+            timer1.Start();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -217,6 +170,42 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(43, 45, 46);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbtime.Text = $"Thời gian hiện tại là  :{DateTime.Now.ToString()}";
+        }
+
+        void LoadForm(Form f, string s)
+        {
+            if (panelApp.Controls.Count > 0)
+            {
+                if (panelApp.Controls[0].Name != f.Name)
+                {
+                    f.TopLevel = false;
+                    f.FormBorderStyle = FormBorderStyle.None;
+                    f.Dock = DockStyle.Fill;
+                    panelApp.Controls.Add(f);
+                    panelApp.Tag = f;
+                    f.BringToFront();
+                    f.Show();
+                    LbTieuDe.Text = s;
+
+                }
+            }
+            else
+            {
+                f.TopLevel = false;
+                f.FormBorderStyle = FormBorderStyle.None;
+                f.Dock = DockStyle.Fill;
+                panelApp.Controls.Add(f);
+                panelApp.Tag = f;
+                f.BringToFront();
+                f.Show();
+                LbTieuDe.Text = s;
+            }
+
         }
     }
 }

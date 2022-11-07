@@ -68,7 +68,8 @@ namespace Phan_mem_quan_ly_ban_thuoc
             {
                 if (i < 4)
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-915T4IQU\HUYENVO;Initial Catalog=THUOC;Integrated Security=True");
+                    //SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-915T4IQU\HUYENVO;Initial Catalog=THUOC;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\Dataf.mdf;Integrated Security=True");
                     try
                     {
                         conn.Open();
@@ -106,10 +107,6 @@ namespace Phan_mem_quan_ly_ban_thuoc
 
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
-            
-            txtPass.PasswordChar = '*';
-           // label3.Text = "";
-           // lblThongbao.Text = "";
         }
 
         private void lblQuen_Click(object sender, EventArgs e)

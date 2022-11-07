@@ -17,12 +17,6 @@ namespace Phan_mem_quan_ly_ban_thuoc
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            string dem = tachdem(txtHoten.Text);
-            txtDem.Text = dem;
-        }
-
         public string tachdem(string s)
         {
             string ho, tendem, ten;

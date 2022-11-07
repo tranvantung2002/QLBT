@@ -15,10 +15,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
     public partial class frm_SP_Doanhthu_Theothang : Form
     {
         DataTable khuong;
-        public frm_SP_Doanhthu_Theothang(string a)
+        public frm_SP_Doanhthu_Theothang()
         {
             InitializeComponent();
-            txtNguoidung.Text = a;
         }
 
         private void frm_SP_Doanhthu_Theothang_Load(object sender, EventArgs e)

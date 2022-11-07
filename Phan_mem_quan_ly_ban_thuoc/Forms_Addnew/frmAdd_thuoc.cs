@@ -13,10 +13,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
 {
     public partial class frmAdd_thuoc : Form
     {
-        SqlConnection conn = new SqlConnection();
-        SqlDataAdapter da = new SqlDataAdapter();
-        SqlCommand cmd = new SqlCommand();
-        DataTable dt = new DataTable();
         DataTable khuong;
         string sql;
         public frmAdd_thuoc()

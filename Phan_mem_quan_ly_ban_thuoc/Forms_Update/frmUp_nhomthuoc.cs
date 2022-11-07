@@ -13,13 +13,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
 {
     public partial class frmUp_nhomthuoc : Form
     {
-        SqlConnection conn = new SqlConnection();
-        SqlDataAdapter da = new SqlDataAdapter();
-        SqlDataAdapter da2 = new SqlDataAdapter();
-        SqlCommand cmd = new SqlCommand();
-        DataTable dt = new DataTable();
-        string sql, constr, fname, sql1, sql2;
-        int i, n;
+        string sql;
         DataTable khuong;
 
         private void btnThemlai_Click(object sender, EventArgs e)

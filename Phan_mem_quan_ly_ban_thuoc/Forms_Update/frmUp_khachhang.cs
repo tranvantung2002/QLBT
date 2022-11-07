@@ -13,14 +13,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
 {
     public partial class frmUp_khachhang : Form
     {
-        SqlConnection conn = new SqlConnection();
-        SqlDataAdapter da = new SqlDataAdapter();
-        SqlCommand cmd = new SqlCommand();
-        DataTable dt = new DataTable();
-        DataTable comdt = new DataTable();
         DataTable khuong;
-        string sql, constr, fname;
-        int i, n;
+        string sql;
         public frmUp_khachhang(string a,string b,string c,string d,string e)
         {
             InitializeComponent();

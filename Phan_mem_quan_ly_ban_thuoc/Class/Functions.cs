@@ -16,10 +16,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
 
         public static void Connect()
         {
-            connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
+            //connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
+            connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Directory.GetCurrentDirectory().ToString() + "\\DataBase\\Dataf.mdf;Integrated Security=True";
             Conn = new SqlConnection();
-            Conn.ConnectionString = connString; 	
-            Conn.Open();   
+            Conn.ConnectionString = connString;
+            Conn.Open();
         }
         public static void Disconnect()
         {
@@ -107,7 +108,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
             {
                 Mydata.Fill(table);
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Hệ thống đang tải dữ liệu");
             }
@@ -197,6 +198,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
             return h;
         }
 
-        
+
     }
 }

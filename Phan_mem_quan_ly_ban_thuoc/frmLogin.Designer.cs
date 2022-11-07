@@ -55,7 +55,6 @@ namespace Phan_mem_quan_ly_ban_thuoc
             // 
             pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             pictureBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            pictureBox4.Image = global::Phan_mem_quan_ly_ban_thuoc.Properties.Resources._blue__love_health_care_logo__1_;
             pictureBox4.Location = new System.Drawing.Point(12, -27);
             pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
@@ -74,8 +73,9 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.txtPass.Location = new System.Drawing.Point(299, 401);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(168, 24);
-            this.txtPass.TabIndex = 8;
+            this.txtPass.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtPass, "Password");
             this.txtPass.Click += new System.EventHandler(this.txtPass_Click);
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
@@ -90,7 +90,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.txtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(170, 24);
-            this.txtUser.TabIndex = 7;
+            this.txtUser.TabIndex = 0;
             this.toolTip1.SetToolTip(this.txtUser, "Username");
             this.txtUser.Click += new System.EventHandler(this.txtUser_Click);
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged_1);
@@ -135,7 +135,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.lblThongbao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongbao.Name = "lblThongbao";
             this.lblThongbao.Size = new System.Drawing.Size(0, 22);
-            this.lblThongbao.TabIndex = 23;
+            this.lblThongbao.TabIndex = 7;
             // 
             // label2
             // 
@@ -145,7 +145,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.label2.Location = new System.Drawing.Point(165, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 25);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Username:";
             // 
             // label3
@@ -156,7 +156,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             this.label3.Location = new System.Drawing.Point(165, 401);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 25);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Password:";
             // 
             // pictureBox2

@@ -15,10 +15,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
     public partial class frm_SP_DT_Khachhang : Form
     {
         DataTable khuong;
-        public frm_SP_DT_Khachhang(string a)
+        public frm_SP_DT_Khachhang()
         {
             InitializeComponent();
-            txtNguoidung.Text = a;
         }
 
         private void frm_SP_DT_Khachhang_Load(object sender, EventArgs e)

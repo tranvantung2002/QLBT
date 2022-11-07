@@ -15,10 +15,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
     public partial class frm_SP_Thuoc_Hethan : Form
     {
         DataTable khuong;
-        public frm_SP_Thuoc_Hethan(string a)
+        public frm_SP_Thuoc_Hethan()
         {
             InitializeComponent();
-            txtNguoidung.Text = a;
         }
 
         private void frm_SP_Thuoc_Hethan_Load(object sender, EventArgs e)
