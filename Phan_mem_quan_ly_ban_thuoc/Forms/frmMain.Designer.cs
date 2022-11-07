@@ -32,7 +32,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnHethong = new System.Windows.Forms.ToolStripMenuItem();
             this.Main = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,7 +81,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1 = new System.Windows.Forms.Label();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.statusStrip2.SuspendLayout();
@@ -92,26 +90,17 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // pictureBox2
             // 
             pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            pictureBox2.Location = new System.Drawing.Point(14, 14);
+            pictureBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            pictureBox2.Image = global::Phan_mem_quan_ly_ban_thuoc.Properties.Resources._blue__love_health_care_logo__1_;
+            pictureBox2.Location = new System.Drawing.Point(-30, -35);
             pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(348, 102);
+            pictureBox2.Size = new System.Drawing.Size(384, 244);
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
             pictureBox2.UseWaitCursor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(393, 166);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
+            pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // menuStrip1
             // 
@@ -131,15 +120,15 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.báoCáoToolStripMenuItem,
             this.trợGiúpToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 155);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 180);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(393, 1500);
+            this.menuStrip1.Size = new System.Drawing.Size(354, 1475);
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // btnHethong
             // 
@@ -155,7 +144,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnHethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHethong.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.btnHethong.Name = "btnHethong";
-            this.btnHethong.Size = new System.Drawing.Size(386, 30);
+            this.btnHethong.Size = new System.Drawing.Size(347, 30);
             this.btnHethong.Text = "     &Hệ thống              ";
             this.btnHethong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -205,7 +194,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.danhMụcTừĐiểnToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.danhMụcTừĐiểnToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.danhMụcTừĐiểnToolStripMenuItem.Name = "danhMụcTừĐiểnToolStripMenuItem";
-            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.danhMụcTừĐiểnToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
             this.danhMụcTừĐiểnToolStripMenuItem.Text = "     &Danh mục từ điển     ";
             this.danhMụcTừĐiểnToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -265,7 +254,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.quảnLýKhoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.quảnLýKhoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.quảnLýKhoToolStripMenuItem.Name = "quảnLýKhoToolStripMenuItem";
-            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
             this.quảnLýKhoToolStripMenuItem.Text = "     &Quản lý kho                 ";
             this.quảnLýKhoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -311,9 +300,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.bánHàngToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bánHàngToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
-            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
             this.bánHàngToolStripMenuItem.Text = "     &Bán hàng                   ";
             this.bánHàngToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bánHàngToolStripMenuItem.Click += new System.EventHandler(this.bánHàngToolStripMenuItem_Click);
             // 
             // LapHD
             // 
@@ -347,7 +337,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.báoCáoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.báoCáoToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
             this.báoCáoToolStripMenuItem.Text = "     Báo &cáo                      ";
             this.báoCáoToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -427,7 +417,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.trợGiúpToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.trợGiúpToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(386, 30);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(347, 30);
             this.trợGiúpToolStripMenuItem.Text = "     &Trợ giúp                      ";
             this.trợGiúpToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -545,25 +535,24 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackgroundImage = global::Phan_mem_quan_ly_ban_thuoc.Properties.Resources.bg1;
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip3);
             this.Controls.Add(this.statusStrip2);
-            this.Controls.Add(pictureBox2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
-            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(pictureBox2);
+            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
-            this.Text = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -578,7 +567,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnHethong;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;

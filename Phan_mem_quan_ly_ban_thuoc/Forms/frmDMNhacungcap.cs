@@ -341,6 +341,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
+
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhà cung cấp này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
@@ -362,6 +363,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             string taikhoan = grdData.Rows[i].Cells["MST"].Value.ToString();
             Forms_Update.frmUp_nhacungcap f = new Forms_Update.frmUp_nhacungcap(manhanvien, tennhanvien, diachi, sodienthoai, taikhoan);
             f.ShowDialog();
+
         }
 
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)

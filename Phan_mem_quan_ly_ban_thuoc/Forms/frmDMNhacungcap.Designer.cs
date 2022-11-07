@@ -575,7 +575,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.label2.Font = new System.Drawing.Font("Nunito Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(909, 30);
+            this.label2.Location = new System.Drawing.Point(937, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(578, 66);
             this.label2.TabIndex = 34;
@@ -600,7 +600,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblTong.Location = new System.Drawing.Point(2002, 1190);
             this.lblTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTong.Name = "lblTong";
-            this.lblTong.Size = new System.Drawing.Size(105, 28);
+            this.lblTong.Size = new System.Drawing.Size(106, 28);
             this.lblTong.TabIndex = 72;
             this.lblTong.Text = "Tổng số : ";
             // 
@@ -614,6 +614,21 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.txtMa.TabIndex = 71;
             this.txtMa.Visible = false;
             // 
+
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(499, 1056);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(262, 28);
+            this.label3.TabIndex = 70;
+            this.label3.Text = "Kích đúp để sửa thông tin";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+
             // btnTK
             // 
             this.btnTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
@@ -621,10 +636,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTK.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
-            this.btnTK.Location = new System.Drawing.Point(1229, 240);
-            this.btnTK.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
+
+            this.btnTK.Location = new System.Drawing.Point(1232, 203);
+            this.btnTK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnTK.Name = "btnTK";
-            this.btnTK.Size = new System.Drawing.Size(152, 64);
+            this.btnTK.Size = new System.Drawing.Size(152, 45);
+
             this.btnTK.TabIndex = 3;
             this.btnTK.Text = "&Hủy lọc";
             this.btnTK.UseVisualStyleBackColor = false;
@@ -637,10 +654,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLoc.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoc.ForeColor = System.Drawing.Color.White;
-            this.btnLoc.Location = new System.Drawing.Point(1068, 240);
-            this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
+
+            this.btnLoc.Location = new System.Drawing.Point(1086, 203);
+            this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(152, 64);
+            this.btnLoc.Size = new System.Drawing.Size(129, 45);
+
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "&Lọc";
             this.btnLoc.UseVisualStyleBackColor = false;
@@ -651,7 +670,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(785, 230);
+
+            this.label1.Location = new System.Drawing.Point(792, 180);
+
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 28);
@@ -662,8 +683,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.comGT.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comGT.FormattingEnabled = true;
-            this.comGT.Location = new System.Drawing.Point(790, 266);
-            this.comGT.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+
+            this.comGT.Location = new System.Drawing.Point(771, 212);
+            this.comGT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+
             this.comGT.Name = "comGT";
             this.comGT.Size = new System.Drawing.Size(255, 34);
             this.comGT.TabIndex = 1;
@@ -676,8 +699,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             "Mã nhà cung cấp",
             "Tên nhà cung cấp",
             "Mã số thuế"});
-            this.comTruong.Location = new System.Drawing.Point(498, 266);
-            this.comTruong.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+
+            this.comTruong.Location = new System.Drawing.Point(454, 212);
+            this.comTruong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+
             this.comTruong.Name = "comTruong";
             this.comTruong.Size = new System.Drawing.Size(250, 34);
             this.comTruong.TabIndex = 0;
@@ -688,10 +713,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label8.Location = new System.Drawing.Point(493, 230);
+
+            this.label8.Location = new System.Drawing.Point(466, 180);
+
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 28);
+            this.label8.Size = new System.Drawing.Size(120, 28);
             this.label8.TabIndex = 64;
             this.label8.Text = "Tên trường";
             // 
@@ -712,15 +739,16 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             // btnAddnew
             // 
-            this.btnAddnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.btnAddnew.Cursor = System.Windows.Forms.Cursors.Hand;
+
+            this.btnAddnew.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAddnew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddnew.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
-            this.btnAddnew.Location = new System.Drawing.Point(1389, 240);
-            this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
+            this.btnAddnew.Location = new System.Drawing.Point(1401, 203);
+            this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddnew.Name = "btnAddnew";
-            this.btnAddnew.Size = new System.Drawing.Size(152, 64);
+            this.btnAddnew.Size = new System.Drawing.Size(179, 45);
+
             this.btnAddnew.TabIndex = 4;
             this.btnAddnew.Text = " &Thêm";
             this.btnAddnew.UseVisualStyleBackColor = false;
@@ -808,11 +836,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.EMAIL,
             this.MST});
             this.grdData.DataSource = this.tblNhacungcapBindingSource;
-            this.grdData.Location = new System.Drawing.Point(497, 355);
-            this.grdData.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+
+            this.grdData.Location = new System.Drawing.Point(454, 285);
+            this.grdData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1364, 661);
+            this.grdData.Size = new System.Drawing.Size(1538, 742);
+
             this.grdData.TabIndex = 57;
             this.grdData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellClick);
             this.grdData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellDoubleClick);
@@ -833,7 +863,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.TENNCC.HeaderText = "Tên nhà cung cấp";
             this.TENNCC.MinimumWidth = 6;
             this.TENNCC.Name = "TENNCC";
-            this.TENNCC.Width = 183;
+
+            this.TENNCC.Width = 216;
+
             // 
             // SDT
             // 
@@ -947,7 +979,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+
+
             this.Font = new System.Drawing.Font("Nunito", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
