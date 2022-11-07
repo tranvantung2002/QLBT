@@ -341,6 +341,11 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;

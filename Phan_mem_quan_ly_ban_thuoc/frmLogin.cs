@@ -26,24 +26,25 @@ namespace Phan_mem_quan_ly_ban_thuoc
 
         private void txtUser_Click(object sender, EventArgs e)
         {
-            label2.Text = "";
-            if (txtPass.Text == "")
-            {
-                label3.Text = "Password";
-            }
+            //label2.Text = "";
+            //if (txtPass.Text == "")
+            //{
+            //    label3.Text = "Password";
+            //}
         }
 
         private void txtPass_Click(object sender, EventArgs e)
         {
-            label3.Text = "";
-            if (txtUser.Text == "")
-            {
-                label2.Text = "Username";
-            }
+            //label3.Text = "";
+            //if (txtUser.Text == "")
+            //{
+            //    label2.Text = "Username";
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
             islogin = false;
             Class.Functions.Connect();
             txtPass.Text = "";
@@ -52,14 +53,14 @@ namespace Phan_mem_quan_ly_ban_thuoc
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            if((label2.Text=="Username") || (txtUser.Text == "")) 
+           
+            if (/*(label2.Text=="Username") || */(txtUser.Text == "")) 
             {            
                 MessageBox.Show("Bạn chưa nhập tài khoản !!!", "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtUser.Focus();
                 return;
             }
-            else if ((label3.Text == "Password") || (txtPass.Text==""))
+            else if (/*(label3.Text == "Password") ||*/ (txtPass.Text==""))
             {
                 MessageBox.Show("Bạn chưa nhập mật khẩu !!!", "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -67,7 +68,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             {
                 if (i < 4)
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-915T4IQU\HUYENVO;Initial Catalog=THUOC;Integrated Security=True");
                     try
                     {
                         conn.Open();
@@ -85,7 +86,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
                         }
                         else
                         {
-                            lblThongbao.Text = "Tài khoản không đúng hoặc sai mật khẩu";
+                            lblThongbao.Text = "Tên tài khoản hoặc mật khẩu không đúng";
                         }
                     }
                     catch /*(Exception ex)*/
@@ -96,7 +97,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
                 }
                 else
                 {
-                    MessageBox.Show("Bạn đăng nhập quá 3 lần !!! Bye bye ","Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Bạn đã nhập sai quá 3 lần.\nChương trình kết thúc!", "Cảnh báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     Application.Exit();
                 }
                 
@@ -105,9 +106,10 @@ namespace Phan_mem_quan_ly_ban_thuoc
 
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
+            
             txtPass.PasswordChar = '*';
-            label3.Text = "";
-            lblThongbao.Text = "";
+           // label3.Text = "";
+           // lblThongbao.Text = "";
         }
 
         private void lblQuen_Click(object sender, EventArgs e)
@@ -117,12 +119,18 @@ namespace Phan_mem_quan_ly_ban_thuoc
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            
             Application.Exit();
         }
 
         private void txtUser_TextChanged_1(object sender, EventArgs e)
         {
-            lblThongbao.Text = "";
+        // lblThongbao.Text = "";
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
