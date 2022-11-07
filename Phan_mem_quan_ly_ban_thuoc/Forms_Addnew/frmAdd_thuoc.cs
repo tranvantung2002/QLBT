@@ -60,50 +60,56 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
         {
             if (txtMa.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập mã thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtMa.Focus();
+                return;
+            }
+            if(cboNhomthuoc.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải tìm tên thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboNhomthuoc.Focus();
                 return;
             }
             if (txtTen.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập tên nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập tên thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTen.Focus();
                 return;
             }
             if (txtHamluong.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập hàm lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                txtHamluong.Focus();
                 return;
             }
             if (txtHangSX.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                txtHangSX.Focus();
                 return;
             }
             if (txtHoatchat.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập hoạt chất chính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                txtHoatchat.Focus();
                 return;
             }
             if (txtNuocSX.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập nước sản xuấtg", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                MessageBox.Show("Bạn phải nhập nước sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNuocSX.Focus();
                 return;
             }
             if (txtQuycach.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập quy cách đóng gói", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                txtQuycach.Focus();
                 return;
             }
             if (txtDVT.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập đơn vị tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                txtDVT.Focus();
                 return;
             }
             sql = "SELECT MATHUOC FROM tblThuoc WHERE MATHUOC=N'" + txtMa.Text.Trim() + "'";
